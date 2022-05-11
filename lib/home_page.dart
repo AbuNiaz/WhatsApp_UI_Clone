@@ -20,13 +20,13 @@ class MyHomePage extends StatelessWidget {
                 icon: Icon(Icons.camera_enhance),
               ),
               Tab(
-                icon: Icon(Icons.camera),
+                text: 'CHATS',
               ),
               Tab(
-                icon: Icon(Icons.camera),
+                text: 'STATUS',
               ),
               Tab(
-                icon: Icon(Icons.camera),
+                text: 'CALL',
               )
             ],
           ),
