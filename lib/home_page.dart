@@ -5,13 +5,32 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('WhatsApp'),
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
-        ],
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('WhatsApp'),
+          actions: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert))
+          ],
+          bottom: const TabBar(
+            tabs: [
+              Tab(
+                icon: Icon(Icons.camera_enhance),
+              ),
+              Tab(
+                icon: Icon(Icons.camera),
+              ),
+              Tab(
+                icon: Icon(Icons.camera),
+              ),
+              Tab(
+                icon: Icon(Icons.camera),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
