@@ -31,6 +31,9 @@ class MyHomePage extends StatelessWidget {
             ],
           ),
         ),
+        body: const TabBarView(
+          children: [],
+        ),
       ),
     );
   }
