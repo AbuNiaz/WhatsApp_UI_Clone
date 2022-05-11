@@ -5,6 +5,7 @@ class Chats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int currentPage = 1;
     return Container();
   }
 }

@@ -5,6 +5,7 @@ class Status extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int currentPage = 2;
     return Container();
   }
 }
