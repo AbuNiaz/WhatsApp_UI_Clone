@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/call.dart';
+import 'package:whatsapp_ui_clone/camera.dart';
+import 'package:whatsapp_ui_clone/chats.dart';
+import 'package:whatsapp_ui_clone/status.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -32,7 +36,12 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
         body: const TabBarView(
-          children: [],
+          children: [
+            Camera(),
+            Chats(),
+            Status(),
+            Calls(),
+          ],
         ),
       ),
     );
