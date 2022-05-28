@@ -9,6 +9,9 @@ class Chats extends StatelessWidget {
       color: Colors.grey,
       child: ListView(
         children: [
+          const SizedBox(
+            height: 10,
+          ),
           Card(
             elevation: 5,
             child: SizedBox(
