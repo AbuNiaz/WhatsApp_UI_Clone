@@ -5,7 +5,6 @@ class Camera extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int currentPage = 0;
-    return Container();
+    return GestureDetector(child: Container());
   }
 }

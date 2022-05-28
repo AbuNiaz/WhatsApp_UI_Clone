@@ -5,7 +5,27 @@ class Chats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int currentPage = 1;
-    return Container();
+    return Container(
+      color: Colors.grey,
+      child: ListView(
+        children: [
+          Card(
+            elevation: 5,
+            child: SizedBox(
+              height: 90,
+              child: Row(
+                children: const [
+                  CircleAvatar(
+                    radius: 35,
+                  )
+                ],
+              ),
+            ),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          ),
+        ],
+      ),
+    );
   }
 }

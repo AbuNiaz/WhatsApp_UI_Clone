@@ -5,7 +5,6 @@ class Calls extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int currentPage = 3;
     return Container();
   }
 }
