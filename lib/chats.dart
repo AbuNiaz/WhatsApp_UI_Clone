@@ -21,19 +21,33 @@ class Chats extends StatelessWidget {
                   const CircleAvatar(
                     radius: 35,
                   ),
-                  Column(
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
-                          Text('Abdul Karim'),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text('Abdul Karim')
-                        ],
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 12, left: 12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: const [
+                            Text(
+                              'Abdul Karim',
+                              style: TextStyle(fontSize: 22),
+                            ),
+                            SizedBox(
+                              width: 40,
+                            ),
+                            Text('10:30 AM',
+                                style: TextStyle(color: Colors.black38))
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const Text('Okay',
+                            style:
+                                TextStyle(color: Colors.black45, fontSize: 18))
+                      ],
+                    ),
                   )
                 ],
               ),
