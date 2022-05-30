@@ -13,6 +13,13 @@ class Chats extends StatelessWidget {
             height: 10,
           ),
           BoxElement(),
+          BoxElement(),
+          BoxElement(),
+          BoxElement(),
+          BoxElement(),
+          BoxElement(),
+          BoxElement(),
+          BoxElement(),
         ],
       ),
     );
