@@ -17,9 +17,23 @@ class Chats extends StatelessWidget {
             child: SizedBox(
               height: 90,
               child: Row(
-                children: const [
-                  CircleAvatar(
+                children: [
+                  const CircleAvatar(
                     radius: 35,
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: const [
+                          Text('Abdul Karim'),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text('Abdul Karim')
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
