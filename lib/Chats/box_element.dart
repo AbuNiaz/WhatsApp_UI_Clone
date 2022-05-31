@@ -42,23 +42,29 @@ class BoxElement extends StatelessWidget {
                         const SizedBox(
                           width: 40,
                         ),
-                        Text(time,
-                            style: const TextStyle(color: Colors.black38))
+                        Text(
+                          time,
+                          style: const TextStyle(color: Colors.black38),
+                        )
                       ],
                     ),
                     const SizedBox(
                       height: 10,
                     ),
-                    Text(title,
-                        style: const TextStyle(
-                            color: Colors.black45, fontSize: 18))
+                    Text(
+                      title,
+                      style:
+                          const TextStyle(color: Colors.black45, fontSize: 18),
+                    )
                   ],
                 ),
               )
             ],
           ),
         ),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
       ),
     );
   }
