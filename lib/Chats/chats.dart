@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/Chats/Chat%20Box/shohan_chat.dart';
 import 'package:whatsapp_ui_clone/Chats/box_element.dart';
 
 class Chats extends StatelessWidget {
@@ -17,7 +18,14 @@ class Chats extends StatelessWidget {
             name: 'Shohan',
             time: '11:35 PM',
             title: 'Where are you?',
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ShohanChats(),
+                ),
+              );
+            },
           ),
           BoxElement(
             name: 'Anik Ronjon',
