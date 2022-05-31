@@ -12,14 +12,46 @@ class Chats extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
-          BoxElement(),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
+          BoxElement(
+            name: '',
+            time: '',
+            title: '',
+          ),
         ],
       ),
     );
@@ -56,22 +88,23 @@ class BoxElement extends StatelessWidget {
                 children: [
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
-                        'Abdul Karim',
-                        style: TextStyle(fontSize: 22),
+                        name,
+                        style: const TextStyle(fontSize: 22),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 40,
                       ),
-                      Text('10:30 AM', style: TextStyle(color: Colors.black38))
+                      Text(time, style: const TextStyle(color: Colors.black38))
                     ],
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text('Okay',
-                      style: TextStyle(color: Colors.black45, fontSize: 18))
+                  Text(title,
+                      style:
+                          const TextStyle(color: Colors.black45, fontSize: 18))
                 ],
               ),
             )
