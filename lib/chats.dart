@@ -29,7 +29,14 @@ class Chats extends StatelessWidget {
 class BoxElement extends StatelessWidget {
   const BoxElement({
     Key? key,
+    required this.name,
+    required this.time,
+    required this.title,
   }) : super(key: key);
+
+  final String name;
+  final String time;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
