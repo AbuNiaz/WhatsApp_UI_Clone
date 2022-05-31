@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clone/Chats/chats.dart';
 import 'package:whatsapp_ui_clone/call.dart';
 import 'package:whatsapp_ui_clone/camera.dart';
-import 'package:whatsapp_ui_clone/chats.dart';
+
 import 'package:whatsapp_ui_clone/status.dart';
 
 class MyHomePage extends StatelessWidget {
