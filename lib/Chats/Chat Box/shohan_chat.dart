@@ -37,13 +37,14 @@ class ShohanChats extends StatelessWidget {
                     height: 50,
                     width: 170,
                     decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(15),
-                          bottomRight: Radius.circular(15),
-                          bottomLeft: Radius.circular(15),
-                        )),
-                  )
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(15),
+                        bottomRight: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(
@@ -56,13 +57,14 @@ class ShohanChats extends StatelessWidget {
                     height: 50,
                     width: 170,
                     decoration: const BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          bottomRight: Radius.circular(15),
-                          bottomLeft: Radius.circular(15),
-                        )),
-                  )
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(15),
+                        bottomRight: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
+                      ),
+                    ),
+                  ),
                 ],
               )
             ],
