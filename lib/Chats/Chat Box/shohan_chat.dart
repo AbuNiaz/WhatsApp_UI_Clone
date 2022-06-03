@@ -45,6 +45,25 @@ class ShohanChats extends StatelessWidget {
                         )),
                   )
                 ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 170,
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                        )),
+                  )
+                ],
               )
             ],
           ),
