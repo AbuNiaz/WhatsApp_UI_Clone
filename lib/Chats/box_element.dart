@@ -25,7 +25,7 @@ class BoxElement extends StatelessWidget {
           child: Row(
             children: [
               const CircleAvatar(
-                radius: 35,
+                radius: 30,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 12, left: 12),

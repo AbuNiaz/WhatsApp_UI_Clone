@@ -44,6 +44,10 @@ class MyHomePage extends StatelessWidget {
             Calls(),
           ],
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: const Icon(Icons.mail),
+        ),
       ),
     );
   }
