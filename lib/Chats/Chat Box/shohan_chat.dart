@@ -75,7 +75,7 @@ class ShohanChats extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),
