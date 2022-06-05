@@ -53,6 +53,9 @@ class ShohanChats extends StatelessWidget {
                         bottomLeft: Radius.circular(15),
                       ),
                     ),
+                    child: const Center(
+                      child: Text('Hi..'),
+                    ),
                   ),
                 ],
               ),
