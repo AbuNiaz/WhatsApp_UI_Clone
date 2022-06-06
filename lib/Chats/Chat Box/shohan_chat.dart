@@ -81,26 +81,32 @@ class ShohanChats extends StatelessWidget {
                       )),
                 ],
               ),
-              Container(
-                height: 20,
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    TextFormField(
-                      autocorrect: false,
+              const SizedBox(
+                height: 50,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 40,
+                    width: 200,
+                    alignment: Alignment.bottomCenter,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30)),
+                    child: TextFormField(
                       decoration: InputDecoration(
-                        hintText: '',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(30),
-                            borderSide:
-                                const BorderSide(color: Colors.purpleAccent)),
-                      ),
+                          hintText: 'text massage',
+                          suffixIcon: const Icon(Icons.attach_file),
+                          focusColor: Colors.blue,
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(30),
+                              borderSide:
+                                  const BorderSide(color: Colors.pink))),
                     ),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.send))
-                  ],
-                ),
-              )
+                  ),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.send))
+                ],
+              ),
             ],
           ),
         ),
