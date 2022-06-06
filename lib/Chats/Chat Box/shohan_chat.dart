@@ -95,6 +95,7 @@ class ShohanChats extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30)),
                     child: TextFormField(
                       decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.emoji_emotions),
                           hintText: 'text massage',
                           suffixIcon: const Icon(Icons.attach_file),
                           focusColor: Colors.blue,
@@ -104,7 +105,12 @@ class ShohanChats extends StatelessWidget {
                                   const BorderSide(color: Colors.pink))),
                     ),
                   ),
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.send))
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(Icons.send),
+                    color: Colors.blue,
+                    autofocus: true,
+                  )
                 ],
               ),
             ],
