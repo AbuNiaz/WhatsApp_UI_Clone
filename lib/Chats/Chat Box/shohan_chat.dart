@@ -116,6 +116,15 @@ class ShohanChats extends StatelessWidget {
                     icon: const Icon(Icons.send),
                     color: Colors.blue,
                     autofocus: true,
+                  ),
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: IconButton(
+                        onPressed: () {}, icon: const Icon(Icons.mic_none)),
                   )
                 ],
               ),
