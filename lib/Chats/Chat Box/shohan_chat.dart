@@ -122,10 +122,10 @@ class ShohanChats extends StatelessWidget {
                     width: 40,
                     decoration: BoxDecoration(
                         color: Colors.blue,
-                        borderRadius: BorderRadius.circular(20)),
+                        borderRadius: BorderRadius.circular(20),),
                     child: IconButton(
-                        onPressed: () {}, icon: const Icon(Icons.mic_none)),
-                  )
+                        onPressed: () {}, icon: const Icon(Icons.mic_none),),
+                  ),
                 ],
               ),
             ),
