@@ -90,53 +90,64 @@ class ShohanChats extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              alignment: Alignment.bottomCenter,
-              child: Row(
-                children: [
-                  Container(
-                    height: 40,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        prefixIcon: const Icon(Icons.emoji_emotions),
-                        hintText: 'text massage',
-                        suffixIcon: const Icon(Icons.attach_file),
-                        focusColor: Colors.blue,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: Colors.pink),
-                        ),
-                      ),
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.send),
-                    color: Colors.blue,
-                    autofocus: true,
-                  ),
-                  Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(Icons.mic_none),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            const ReplyField(),
           ]),
         ),
+      ),
+    );
+  }
+}
+
+class ReplyField extends StatelessWidget {
+  const ReplyField({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.bottomCenter,
+      child: Row(
+        children: [
+          Container(
+            height: 40,
+            width: 200,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: TextFormField(
+              decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.emoji_emotions),
+                hintText: 'text massage',
+                suffixIcon: const Icon(Icons.attach_file),
+                focusColor: Colors.blue,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: const BorderSide(color: Colors.pink),
+                ),
+              ),
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.send),
+            color: Colors.blue,
+            autofocus: true,
+          ),
+          Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.mic_none),
+            ),
+          ),
+        ],
       ),
     );
   }
