@@ -30,7 +30,7 @@ class ShohanChats extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.more_vert),
-          )
+          ),
         ],
       ),
       body: Container(
@@ -69,19 +69,20 @@ class ShohanChats extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Container(
-                        height: 50,
-                        width: 170,
-                        decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(15),
-                            bottomRight: Radius.circular(15),
-                            bottomLeft: Radius.circular(15),
-                          ),
+                      height: 50,
+                      width: 170,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
                         ),
-                        child: const Center(
-                          child: Text("Hello!!"),
-                        )),
+                      ),
+                      child: const Center(
+                        child: Text("Hello!!"),
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(
